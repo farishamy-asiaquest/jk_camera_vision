@@ -47,6 +47,14 @@ CAMERA_CONFIG = {
     'fps': 30,                    # Desired FPS
 }
 
+# Multi-Person Detection Configuration
+MULTI_PERSON_CONFIG = {
+    'max_persons': 8,            # Maximum number of persons to track
+    'person_association_threshold': 0.1,  # Threshold for associating new detections with existing persons
+    'person_stale_timeout': 5.0,  # Seconds before a person is considered stale and removed
+    'enable_person_tracking': True,  # Enable multi-person tracking
+}
+
 # Debug Configuration
 DEBUG_CONFIG = {
     'print_activity': True,       # Print activity to console
